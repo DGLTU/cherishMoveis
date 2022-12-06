@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/instrument/',
+  base: 'instrument/',
   plugins: [vue()],
   resolve: {
     alias: {
