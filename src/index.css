@@ -12,9 +12,6 @@
   @apply w-full h-2 bg-gradient-to-t absolute bottom-0
   from-black to-black/10 backdrop-blur;
 }
-.custom-pagination .swiper-pagination-bullet-active{
-  @apply bg-black;
-}
-.custom-pagination .swiper-pagination-bullet{
-  @apply mt-4;
+.swiper-pagination-bullet-active{
+  @apply bg-cyan-900;
 }

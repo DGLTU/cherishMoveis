@@ -11,7 +11,6 @@ export default {
     const pagination = {
       clickable: true,
       type: 'bullets',
-      el: '.custom-pagination',
     };
     return {
       modules: [Pagination],
@@ -44,16 +43,10 @@ export default {
     v-for="movie in movies" :key="movie.title">
       <img :src="movie.poster" class="w-[200px] h-[315px] img-center-cover"
       alt="">
-      <a href="" class="before: w-full h-full absolute top-0"></a>
+      <a href="" class="after: w-full h-full absolute top-0"></a>
       <h6 class="mt-4 text-lg font-bold">{{movie.title}}</h6>
       <span class=" text-slate-500">{{movie.tag}}</span>
     </swiper-slide>
-    <div class="absolute top-0 right-0 ">
-      <p>1</p>
-      <div class="my-8 w-8 h-1 bg-sky-900 translate-x-[-20px]"></div>
-      <div class="custom-pagination flex flex-col">
-      </div>
-    </div>
   </swiper>
 </div>
 </template>
